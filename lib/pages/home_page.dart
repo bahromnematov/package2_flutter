@@ -19,34 +19,24 @@ class _HomePageState extends State<HomePage> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             MaterialButton(
-              child: Text("text1".tr(),
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold)),
-              color: Colors.lightBlue,
               onPressed: () {},
+              color: Colors.blue,
+              child: Text("text1".tr()),
             ),
             MaterialButton(
-              child: Text(
-                "text2".tr(),
-                style:
-                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-              ),
-              color: Colors.lightBlue,
               onPressed: () {},
+              color: Colors.blue,
+              child: Text("text2".tr()),
             ),
             MaterialButton(
-              child: Text("text3".tr(),
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold)),
-              color: Colors.lightBlue,
               onPressed: () {},
+              color: Colors.blue,
+              child: Text("text3".tr()),
             ),
             MaterialButton(
-              child: Text("text3".tr(),
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold)),
-              color: Colors.lightBlue,
               onPressed: () {},
+              color: Colors.blue,
+              child: Text("text4".tr()),
             ),
             SizedBox(
               height: 30,
@@ -55,18 +45,28 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 children: [
                   Expanded(
-                    child: Container(
-                      height: 50,
-                      color: Colors.red,
-                      child: Center(
+                      child: Container(
+                          height: 50,
+                          color: Colors.green,
                           child: MaterialButton(
-                        onPressed: () {
-                          context.setLocale(Locale("uz", "UZ"));
-                        },
-                        child: Text("Uzbek"),
-                      )),
-                    ),
+                            onPressed: () {
+                              context.setLocale(Locale('uz', 'UZ'));
+                            },
+                            child: Text("Uzbek"),
+                          ))),
+                  SizedBox(
+                    width: 12,
                   ),
+                  Expanded(
+                      child: Container(
+                          height: 50,
+                          color: Colors.red,
+                          child: MaterialButton(
+                            onPressed: () {
+                              context.setLocale(Locale('ru', 'RU'));
+                            },
+                            child: Text("Russia"),
+                          ))),
                   SizedBox(
                     width: 12,
                   ),
@@ -76,27 +76,12 @@ class _HomePageState extends State<HomePage> {
                           color: Colors.amber,
                           child: MaterialButton(
                             onPressed: () {
-                              context.setLocale(Locale("ru", "RU"));
+                              context.setLocale(Locale('en', 'US'));
                             },
-                            child: Text("Russia"),
+                            child: Text("English"),
                           ))),
                   SizedBox(
                     width: 12,
-                  ),
-                  Expanded(
-                      child: Container(
-                    height: 50,
-                    color: Colors.green,
-                    child: Center(
-                        child: MaterialButton(
-                      onPressed: () {
-                        context.setLocale(Locale("en", "US"));
-                      },
-                      child: Text("English"),
-                    )),
-                  )),
-                  SizedBox(
-                    width: 8,
                   ),
                 ],
               ),
