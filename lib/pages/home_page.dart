@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
     SecureStorage.storeApiKey("Bahrom");
     SecureStorage.loadApiKey().then((value) => {print(value.toString())});
 
-    SecureStorage.removeApiKey();
+    // SecureStorage.removeApiKey();
   }
 
   @override
