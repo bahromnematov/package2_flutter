@@ -14,4 +14,4 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://pub.dev/), which offers tutorials,
 
-[Follow me](https://github.com/bahromnematov), Follow mee
+- [Follow me](https://github.com/bahromnematov), Follow mee
