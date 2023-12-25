@@ -6,10 +6,10 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
 image  
-First Header | Second Header
+Secure Sorage | Shared Preference
 ------------ | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | content in the second column
+Pub.dev file secure_storage | Pub.dev file shared_preference
+pubspec.yaml get | pubspec.yaml get
 
 A few resources to get you started if this is your first Flutter project:
   
