@@ -13,7 +13,7 @@ void main() async {
   await EasyLocalization.ensureInitialized();
 
   await Hive.initFlutter();
-  await Hive.openBox('Young_centre');
+  await Hive.openBox('flutter');
 
 
   runApp(

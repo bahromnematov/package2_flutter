@@ -1,8 +1,6 @@
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:package2_flutter/model/user_model.dart';
-import 'package:package2_flutter/servise/pref_servise.dart';
-import 'package:package2_flutter/servise/secure_storage.dart';
+import 'package:package2_flutter/servise/hive_servise.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -16,14 +14,18 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    SecureStorage.storeApiKey("Bahrom");
-    SecureStorage.loadApiKey().then((value) => {print(value.toString())});
+    var user = User("101", "asdff@gmail.com", "12345678");
+    HiveServise.storeUser(user);
 
-    // SecureStorage.removeApiKey();
+   var user2= HiveServise.loadUser();
+   print(user2.toJson().toString());
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Container());
+    return Scaffold(
+        body: Container(
+      color: Colors.red,
+    ));
   }
 }

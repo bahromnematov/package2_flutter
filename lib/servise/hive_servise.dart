@@ -2,10 +2,10 @@ import 'package:hive/hive.dart';
 
 import '../model/user_model.dart';
 
-class HiveService {
-  static var box = Hive.box("Young_centre");
+class HiveServise {
+  static var box = Hive.box("flutter");
 
-  static void storeUser(User user) async {
+  static void storeUser(User user) {
     box.put("user", user.toJson());
   }
 
@@ -14,7 +14,10 @@ class HiveService {
     return user;
   }
 
-  static void removeUser() async {
+  static void removeUser() {
     box.delete("user");
   }
 }
+
+
+
